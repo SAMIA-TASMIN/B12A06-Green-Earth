@@ -1,0 +1,3 @@
+- **Live Link :** https://samia-tasmin.github.io/b12-green-eaarth/ 
+- **Netlify Live Link :** green-earth-samia-tasmin.netlify.app
+- **GitHub Private Repository:** https://github.com/programming-hero-web-course2/b12-green-eaarth-SAMIA-TASMINlify
