@@ -57,23 +57,27 @@
     </section>
 
     <!-- About Section -->
+  
+
     <section class="bg-[#f0fdf4] md:p-[50px]">
       <!-- Trees section -->
       <div class="container mx-auto p-4">
+
+        <!-- looader -->
+        <div id="spinner" class="flex justify-center items-center my-3 hidden">
+
+<span class="loading loading-bars loading-xl"></span></div>
         <!-- Title -->
         <h1 id="trees" class="text-3xl font-semibold text-center mb-6">
           Choose Your Trees
         </h1>
 
-        <div
-          id="loader"
-          class="fixed inset-0 bg-white bg-opacity-70 flex items-center justify-center hidden z-50"
-        >
-          <span class="loading loading-spinner text-success loading-lg"></span>
-        </div>
+        
+
+
 
         <!-- Layout -->
-        <section class="flex flex-row gap-5">
+        <section id="dataContainer" class="md:flex md:flex-row gap-5">
           <!-- Left Sidebar -->
           <aside class="w-2/12">
             <h3 class="text-lg font-semibold mb-4">Categories</h3>
@@ -83,7 +87,7 @@
           <!-- Main Content -->
           <main
             id="tree-container"
-            class="w-8/12 grid grid-cols-3 gap-4 transition-all"
+            class="md:w-8/12 md:grid md:grid-cols-3 gap-4 transition-all"
           ></main>
 
           <!-- Cart Sidebar -->
@@ -220,22 +224,27 @@
     </footer>
 
     <!-- Modal -->
-    <dialog id="tree-modal" class="modal">
-      <div class="modal-box">
-        <h3 id="modal-title" class="font-bold text-lg"></h3>
-        <img id="modal-image" class="w-full rounded-lg my-3" />
-        <p id="modal-description" class="text-gray-600 mb-2"></p>
-        <p id="modal-category" class="text-sm font-medium text-gray-500"></p>
-        <p id="modal-price" class="font-semibold text-green-600"></p>
-        <div class="modal-action">
-          <form method="dialog">
-            <button class="btn">Close</button>
-          </form>
-        </div>
-      </div>
-    </dialog>
+   <!-- Open the modal using ID.showModal() method -->
+
+  <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+<dialog id="my_modal_5" class="modal modal-bottom  md:modal-middle mx-auto   ">
+  <div class="modal-box">
+    <div id="modalBody">
+
+
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn ">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
 
     <!-- Script -->
+   
     <script src="./script.js"></script>
   </body>
 </html>
