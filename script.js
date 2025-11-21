@@ -75,7 +75,7 @@ const displayCategories = (allCategories) => {
   allCategories.forEach((singleCategory) => {
     const li = document.createElement("li");
     li.innerHTML = `
-        <button id="category-${singleCategory.id}" onclick=loadBySingleCategory(${singleCategory.id}) class="btn btn-sm w-full text-left cursor-pointer hover:bg-[#15803D] text-black rounded-md px-4 py-2 activeCategory" > ${singleCategory.category_name}
+        <button id="category-${singleCategory.id}" onclick=loadBySingleCategory(${singleCategory.id}) class="btn btn-sm w-full text-left cursor-pointer hover:bg-[#15803D] hover:text-white rounded-md px-4 py-2 activeCategory" > ${singleCategory.category_name}
         </button>
       `;
     categoryList.appendChild(li);
@@ -289,7 +289,7 @@ function updateCart() {
         <p class="font-medium text-sm">${item.name}</p>
         <p class="text-green-600 text-xs">৳${item.price}</p>
       </div>
-      <button onclick="removeFromCart('${item.id}')" class="text-red-500 hover:text-red-700">
+      <button onclick="removeFromCart('${item.id}')" class="text-red-500 hover:text-red-700 w-full">
         <i class="fas fa-times"></i>
       </button>
     </div>
