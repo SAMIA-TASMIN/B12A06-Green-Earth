@@ -135,7 +135,7 @@ const displayBySingleCategory = (plants) => {
             <span class="badge badge-outline">${plant.category}</span>
             <span class="font-semibold text-green-600">৳${plant.price}</span>
           </div>
-          <button onclick="addToCart('${plant.id}', '${plant.name}', ${plant.price})" class="btn btn-sm  bg-green-600 rounded-md p-2 cursor-pointer text-white mt-2 add-to-cart hover:bg-green-700"
+          <button onclick="addToCart('${plant.id}', '${plant.name}', ${plant.price})" class="btn w-full bg-green-600 rounded-md p-2 cursor-pointer mt-2 add-to-cart hover:bg-green-700 hover:text-white"
             data-id="${plant.id}" data-name="${plant.name}" data-price="${
       plant.price
     }">
