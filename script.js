@@ -155,19 +155,7 @@ const loadSingleDetailForModal = (id) => {
     .then((data) => displayModal(data.plants));
 };
 
-// const displayModal = (plants) => {
- 
-//   const modalBox = document.getElementById("modalBody")
-//  modalBox.innerHTML = `
 
-//  <p>name: ${plants.name} </p>
-//  <img src= alt="">
-//   <p>Description: ${plants.description} </p>
-//    <p>category: ${plants.category} </p>
- 
-//  `
-//  document.getElementById('my_modal_5').showModal()
-// };
 const displayModal = (plants) => {
   const modalBox = document.getElementById("modalBody");
   modalBox.innerHTML = `
@@ -194,63 +182,6 @@ const displayModal = (plants) => {
 };
 
 
-// ========================option1=========================================================
-// Cart array to store items
-// let cart = [];
-
-// Add to cart functionality
-// document.addEventListener('click', (e) => {
-//   if (e.target.classList.contains('add-to-cart')) {
-//     const id = e.target.getAttribute('data-id');
-//     const name = e.target.getAttribute('data-name');
-//     const price = parseFloat(e.target.getAttribute('data-price'));
-
-//     // Check if item already exists in cart
-//     const existingItem = cart.find(item => item.id === id);
-    
-//     if (!existingItem) {
-//       cart.push({ id, name, price });
-//       updateCart();
-//     }
-//   }
-// });
-
-// Remove from cart
-// function removeFromCart(id) {
-//   cart = cart.filter(item => item.id !== id);
-//   updateCart();
-// }
-
-// Update cart display
-// function updateCart() {
-//   const cartItems = document.getElementById('cart-items');
-//   const cartTotal = document.getElementById('cart-total');
-
-//   if (cart.length === 0) {
-//     cartItems.innerHTML = '<p class="text-gray-400 text-center">Cart is empty</p>';
-//     cartTotal.textContent = '৳0';
-//     return;
-//   }
-
-//   cartItems.innerHTML = cart.map(item => `
-//     <div class="flex justify-between items-center bg-gray-50 p-2 rounded">
-//       <div class="flex-1">
-//         <p class="font-medium text-sm">${item.name}</p>
-//         <p class="text-green-600 text-xs">৳${item.price}</p>
-//       </div>
-//       <button onclick="removeFromCart('${item.id}')" class="text-red-500 hover:text-red-700">
-//         <i class="fas fa-times"></i>
-//       </button>
-//     </div>
-//   `).join('');
-
-//   const total = cart.reduce((sum, item) => sum + item.price, 0);
-//   cartTotal.textContent = `৳${total}`;
-// }
-
-
-// ====================option 2=============================================================
-// Cart array
 let cart = [];
 
 // Add to cart function
