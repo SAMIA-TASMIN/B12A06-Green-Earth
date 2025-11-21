@@ -289,7 +289,7 @@ function updateCart() {
         <p class="font-medium text-sm">${item.name}</p>
         <p class="text-green-600 text-xs">৳${item.price}</p>
       </div>
-      <button onclick="removeFromCart('${item.id}')" class="text-red-500 hover:text-red-700 w-full">
+      <button onclick="removeFromCart('${item.id}')" class="text-red-500 hover:text-red-700">
         <i class="fas fa-times"></i>
       </button>
     </div>
