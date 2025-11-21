@@ -1,3 +1,3 @@
 - **Live Link :** https://samia-tasmin.github.io/B12A06-Green-Earth/
 - **Netlify Live Link :** green-earth-samia-tasmin.netlify.app
-- **GitHub Private Repository:** https://github.com/SAMIA-TASMIN/B12A06-Green-Earth
+- **GitHub Public Repository:** https://github.com/SAMIA-TASMIN/B12A06-Green-Earth
