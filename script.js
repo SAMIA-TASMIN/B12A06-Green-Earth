@@ -116,11 +116,11 @@ const displayBySingleCategory = (plants) => {
   plants.forEach((plant) => {
     const card = document.createElement("div");
     card.className =
-      "card bg-base-100 shadow-sm border max-h-96  border-gray-200 rounded-lg p-2";
+      "card bg-base-100 shadow-sm border border-gray-200 rounded-lg p-2";
     card.innerHTML = `
-        <figure class="bg-gray-100 "><img src="${plant.image || ""}" alt="${
+        <figure class="bg-gray-100 w-full h-[200px]"><img src="${plant.image || ""}" alt="${
       plant.name
-    }" class="h-40 object-cover w-full" /></figure>
+    }" class="object-cover" /></figure>
         <div class="card-body ">
           <h2 onclick=loadSingleDetailForModal(${plant.id}) class="card-title cursor-pointer text-green-700" data-tree-id="${
       plant.id
@@ -171,16 +171,16 @@ const loadSingleDetailForModal = (id) => {
 const displayModal = (plants) => {
   const modalBox = document.getElementById("modalBody");
   modalBox.innerHTML = `
-    <div class="space-y-4">
+    <div class="space-y-4 p-4">
       <h4 class="text-xl font-bold text-gray-800">Name: ${plants.name}</h4>
 
       <img 
         src="${plants.image}" 
         alt="${plants.name}"
-        class="md:w-full  md:h-[200px] rounded-lg object-cover border border-gray-300"
+        class="md:w-[300px]  md:h-[200px] rounded-lg object-cover border border-gray-300"
       />
 
-      <p class="text-gray-700">
+      <p class="text-gray-700 md:w-[300px]">
         <span class="font-semibold">Description:</span> ${plants.description}
       </p>
 
@@ -298,9 +298,6 @@ function updateCart() {
   const total = cart.reduce((sum, item) => sum + item.price, 0);
   cartTotal.textContent = `৳${total}`;
 }
-
-
-
 
 
 loadCategories();
